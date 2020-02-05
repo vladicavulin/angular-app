@@ -14,6 +14,6 @@ this.dataStorageS.storeRecipes();
   }
 
   onFetchData() {
-    this.dataStorageS.fetchRecipes();
+    this.dataStorageS.fetchRecipes().subscribe();
   }
 }
