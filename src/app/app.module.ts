@@ -1,4 +1,5 @@
 import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
 
 import { ShoppingListService } from './shared/shopping-list.service';
 import { DropdownDirective } from './shared/dropdown.directive';
@@ -37,7 +38,8 @@ import { RecipesService } from './shared/recipes.service';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [ShoppingListService, RecipesService],
   bootstrap: [AppComponent]
